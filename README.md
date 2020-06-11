@@ -12,12 +12,12 @@ When starting for the first time, you chose "I copied it" when VMware asks where
 
 ## First steps
 
-1. Update and upgrade the system by running:
+#### 1. Update and upgrade the system by running:
 ```shell
 sudo apt update && sudo apt dist-upgrade -y
 ```
 
-2. (optional) Change your keyboard layout - in my case: German layout, by running:
+#### 2. (optional) Change your keyboard layout - in my case German - by running:
 ```shell
 sudo dpkg-reconfigure keyboard-configuration
 ```
@@ -29,12 +29,12 @@ sudo service keyboard-setup restart
 
 But in many cases a full reboot is required.
 
-3. Change the default password for the "kali" user to something cryptic:
+#### 3. Change the default password for the "kali" user to something cryptic:
 ```shell
 passwd
 ```
 
-4. Add a lowpriv daily-driver account
+#### 4. Add a lowpriv daily-driver account
 ```shell
 sudo adduser YourUsername
 ```
@@ -45,7 +45,7 @@ sudo usermod -aG sudo YourUsername
 ``` 
 Logout and switch to your new user, which you'll use from here on out.
 
-5. Pick a terminal of your choosing
+#### 5. Pick a terminal of your choosing
 
 In general the default terminals (Kali uses Xfce as a desktop environment, which comes with Qterminal) are not the most efficient/productive environments, so depending on your current needs pick something else. Two good choices right now would be Alacritty for a GPU-enabled fast terminal (https://github.com/alacritty/alacritty) and Termite (https://github.com/thestinger/termite), which is VTE-based and a bit slower, but heavily keyboard-favored and leans on similar modes like Vim.
 
@@ -53,7 +53,7 @@ In my case I use termite for now, you can follow this install instructions: http
 
 There is a bug in the test of the vte API, so additionally you need to mini-patch one file to adjust the struct, see: https://github.com/GNOME/vte/commit/53690d5cee51bdb7c3f7680d3c22b316b1086f2c#diff-09af37e3a14d365cf086df3ead32aa7f
 
-6. Set browser defaults (for example Chromium over Firefox)
+#### 6. Set browser defaults (for example Chromium over Firefox)
 ```shell
 sudo update-alternatives --config x-www-browser
 sudo update-alternatives --config gnome-www-browser
