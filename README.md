@@ -45,6 +45,20 @@ sudo usermod -aG sudo YourUsername
 ``` 
 Logout and switch to your new user, which you'll use from here on out.
 
+Get the most annoying thing out of the way first, tick: Firefox -> Preferences -> Restore previous session
+
+#### 5. Set your prefered Desktop environment
+
+In my case it's currently MATE, alternatives can be seen/found using:
+```shell
+apt-cache search kali-desktop
+```
+
+```shell
+sudo apt-get install kali-desktop-mate
+sudo update-alternatives --config x-session-manager
+```
+
 #### 5. Pick a terminal of your choosing
 
 In general the default terminals (Kali uses Xfce as a desktop environment, which comes with Qterminal) are not the most efficient/productive environments, so depending on your current needs pick something else. Two good choices right now would be Alacritty for a GPU-enabled fast terminal (https://github.com/alacritty/alacritty) and Termite (https://github.com/thestinger/termite), which is VTE-based and a bit slower, but heavily keyboard-favored and leans on similar modes like Vim.
