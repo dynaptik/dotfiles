@@ -49,15 +49,22 @@ Get the most annoying thing out of the way first, tick: Firefox -> Preferences -
 
 #### 5. Set your prefered Desktop environment
 
-In my case it's currently MATE, alternatives can be seen/found using:
+Options with pre-configured settings for Kali can be seen/found using:
 ```shell
 apt-cache search kali-desktop
 ```
-
+Going with MATE currently:
 ```shell
 sudo apt-get install kali-desktop-mate
 sudo update-alternatives --config x-session-manager
+# make it prettier
+sudo apt-get install arc-theme
 ```
+
+
+
+
+// obsolete
 
 #### 5. Pick a terminal of your choosing
 
