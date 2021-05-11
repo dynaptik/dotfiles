@@ -61,6 +61,13 @@ sudo update-alternatives --config x-session-manager
 sudo apt-get install arc-theme
 ```
 
+#### Fix Python
+
+Currently /usr/bin/python still points to python2, which should be deprecated as much as possible by now. To drop the backwards compatibility change this symlink with this install:
+```shell
+sudo apt install -y python-is-python3
+``` 
+
 
 
 
