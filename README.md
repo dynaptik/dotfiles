@@ -76,9 +76,12 @@ Currently I opt for Obsidian, which comes in a AppImage packaging. For ease inst
 sudo dpkg -i appimagelauncher_<version>.bionic_amd64.deb
 ```
 
-Get Obsidian from: https://obsidian.md/
+Get Obsidian from: https://obsidian.md/ - place in a folder like ~/Applications and double click it, follow the instructions of AppImage Launcher, and hit "integrate and run".
 
-
+For screenshots I go with Flameshot:
+```shell
+sudo apt install flameshot
+```
 
 // obsolete
 
