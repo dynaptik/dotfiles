@@ -68,6 +68,15 @@ Currently /usr/bin/python still points to python2, which should be deprecated as
 sudo apt install -y python-is-python3
 ``` 
 
+#### Get notetaking sorted out
+
+Currently I opt for Obsidian, which comes in a AppImage packaging. For ease install a current version of appimager launcher: https://github.com/TheAssassin/AppImageLauncher/releases
+
+```shell
+sudo dpkg -i appimagelauncher_<version>.bionic_amd64.deb
+```
+
+Get Obsidian from: https://obsidian.md/
 
 
 
