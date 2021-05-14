@@ -61,14 +61,14 @@ sudo update-alternatives --config x-session-manager
 sudo apt-get install arc-theme
 ```
 
-#### Fix Python
+#### 6. Fix Python
 
 Currently /usr/bin/python still points to python2, which should be deprecated as much as possible by now. To drop the backwards compatibility change this symlink with this install:
 ```shell
 sudo apt install -y python-is-python3
 ``` 
 
-#### Get notetaking sorted out
+#### 7. Get notetaking sorted out
 
 Currently I opt for Obsidian, which comes in a AppImage packaging. For ease install a current version of appimager launcher: https://github.com/TheAssassin/AppImageLauncher/releases
 
@@ -83,26 +83,12 @@ For screenshots I go with Flameshot:
 sudo apt install flameshot
 ```
 
+#### 8. Setup HTB or any other lab with VPN connection
+
+Create OVPN pack (EU Free -> any gateway -> TCP)
+
+Save the OpenVPN configuration pack (\*.ovpm) and use the NetworkManager Applet:
+1. VPN-Connections -> Add / Configure VPN ...
+2. Connection Type: Import a saved VPN configuration -> choose the \*.ovpn file, accept all settings
+
 // obsolete
-
-#### 5. Pick a terminal of your choosing
-
-In general the default terminals (Kali uses Xfce as a desktop environment, which comes with Qterminal) are not the most efficient/productive environments, so depending on your current needs pick something else. Two good choices right now would be Alacritty for a GPU-enabled fast terminal (https://github.com/alacritty/alacritty) and Termite (https://github.com/thestinger/termite), which is VTE-based and a bit slower, but heavily keyboard-favored and leans on similar modes like Vim.
-
-In my case I use termite for now, you can follow this install instructions: https://computingforgeeks.com/install-termite-terminal-on-ubuntu-18-04-ubuntu-16-04-lts/
-
-There is a bug in the test of the vte API, so additionally you need to mini-patch one file to adjust the struct, see: https://github.com/GNOME/vte/commit/53690d5cee51bdb7c3f7680d3c22b316b1086f2c#diff-09af37e3a14d365cf086df3ead32aa7f
-
-#### 6. Set browser defaults (for example Chromium over Firefox)
-```shell
-sudo update-alternatives --config x-www-browser
-sudo update-alternatives --config gnome-www-browser
-```
-
-
-
-
-
-Todo:
-- add command line fuzzy finder (fzf)
-- x-session-manager
