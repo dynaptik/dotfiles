@@ -83,7 +83,18 @@ For screenshots I go with Flameshot:
 sudo apt install flameshot
 ```
 
-#### 8. Setup HTB or any other lab with VPN connection
+To copy terminal outputs easily into Obsidian for your notes, use xclip:
+```shell
+sudo apt install xclip
+```
+
+#### 8. tmux time
+Edit your .tmux.conf in ~
+```bash
+
+```
+
+#### 9. Setup HTB or any other lab with VPN connection
 
 Create OVPN pack (EU Free -> any gateway -> TCP)
 
