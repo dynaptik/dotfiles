@@ -78,6 +78,15 @@ sudo dpkg -i appimagelauncher_<version>.bionic_amd64.deb
 
 Get Obsidian from: https://obsidian.md/ - place in a folder like ~/Applications and double click it, follow the instructions of AppImage Launcher, and hit "integrate and run".
 
+Alternative: Notion
+
+```shell
+sudo apt install p7zip-full imagemagick fakeroot make g++
+wget https://notion.davidbailey.codes/notion-linux.list
+sudo mv notion-linux.list /etc/apt/sources.list.d/notion-linux.list
+sudo apt update && sudo apt install notion-desktop
+```
+
 For screenshots I go with Flameshot:
 ```shell
 sudo apt install flameshot
