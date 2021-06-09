@@ -85,6 +85,9 @@ sudo apt install p7zip-full imagemagick fakeroot make g++
 wget https://notion.davidbailey.codes/notion-linux.list
 sudo mv notion-linux.list /etc/apt/sources.list.d/notion-linux.list
 sudo apt update && sudo apt install notion-desktop
+# or
+sudo apt update && sudo apt install notion-enhanced
+# for the modded version
 ```
 
 For screenshots I go with Flameshot:
