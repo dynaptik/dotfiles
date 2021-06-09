@@ -100,13 +100,30 @@ To copy terminal outputs easily into Obsidian for your notes, use xclip:
 sudo apt install xclip
 ```
 
-#### 8. tmux time
+#### 8. Configure your shell / bash
+
+Set appropriate aliases in .bash_aliases
+```shell
+alias nmap="grc nmap"
+alias findvm="grc nmap -sn -sV 192.168.1.0/24 | grep -E -o '(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)' | sort"
+alias thmvpn="openvpn ~/tryhackme/deezysec.ovpn"
+alias htbvpn="openvpn ~/htb/lab_deezysec.ovpn"
+alias enum4linux="/opt/enum4linux-ng/enum4linux-ng.py"
+alias wgetfiles="echo wget -nd -np -R "index.html*" -P /tmp/rowbot --recursive http:// | xclip"
+alias getip="ip addr show tun0 | grep -Po 'inet \K[\d.]+' | xclip"
+alias grep="grep --color=auto"
+alias egrep="egrep --color=auto"
+alias fgrep="fgrep --color=auto"
+```
+
+
+#### x. tmux time - or Terminator?
 Edit your .tmux.conf in ~
 ```bash
 
 ```
 
-#### 9. Setup HTB or any other lab with VPN connection
+#### x. Setup HTB or any other lab with VPN connection
 
 Create OVPN pack (EU Free -> any gateway -> TCP)
 
